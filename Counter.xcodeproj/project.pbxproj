@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		C702FCD82CD9347500A6677A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		C702FCD82CD9347500A6677A /* Exceptions for "Counter" folder in "Counter" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -40,9 +40,24 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C702FCB22CD9347100A6677A /* Counter */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (C702FCD82CD9347500A6677A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Counter; sourceTree = "<group>"; };
-		C702FCC92CD9347500A6677A /* CounterTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CounterTests; sourceTree = "<group>"; };
-		C702FCD32CD9347500A6677A /* CounterUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CounterUITests; sourceTree = "<group>"; };
+		C702FCB22CD9347100A6677A /* Counter */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C702FCD82CD9347500A6677A /* Exceptions for "Counter" folder in "Counter" target */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
+		C702FCC92CD9347500A6677A /* CounterTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CounterTests;
+			sourceTree = "<group>";
+		};
+		C702FCD32CD9347500A6677A /* CounterUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CounterUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +200,6 @@
 				};
 			};
 			buildConfigurationList = C702FCAB2CD9347100A6677A /* Build configuration list for PBXProject "Counter" */;
-			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -194,6 +208,7 @@
 			);
 			mainGroup = C702FCA72CD9347100A6677A;
 			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = C702FCB12CD9347100A6677A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -282,6 +297,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +326,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
