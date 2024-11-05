@@ -14,46 +14,40 @@ final class ViewController: UIViewController {
     
     // MARK: - variables
     
-    private var count = 0
+    private var count: Int = .zero
     
     private lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .short
-        formatter.timeStyle = .medium
+        formatter.timeStyle = .short
         formatter.locale = Locale(identifier: "ru_Ru")
         return formatter
     }()
     
-    private lazy var date: Date = {
-        return Date()
-    }()
+    private var date = Date()
     
     private lazy var currentDay: String = {
         return dateFormatter.string(from: date)
     }()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
         infoCountLabel.text = "0"
-        
         infoHistoryTextView.text = "История изменений:\n\n"
         infoHistoryTextView.isScrollEnabled = true
         infoHistoryTextView.isEditable = false
     }
-
+    
     // MARK: - functions
     
     private func clear(){
-        count = 0
-        infoCountLabel.text = "0"
+        count = .zero
+        infoCountLabel.text = "Значение счетчика: \(count)"
         updateHistory(message: "значение сброшено")
     }
     
     private func controlNegativeNumbers(){
-        if count != 0 {
+        if count != .zero {
             count -= 1
             infoCountLabel.text = "Значение счетчика: \(count)"
             updateHistory(message: "значение изменено на -1")
@@ -68,24 +62,19 @@ final class ViewController: UIViewController {
     
     // MARK: - @IBAction
     
-    @IBAction func minusCountButton(_ sender: Any) {
+    @IBAction private func minusCountButton(_ sender: Any) {
         controlNegativeNumbers()
     }
     
-    
-    @IBAction func plusCountButton(_ sender: Any) {
+    @IBAction private func plusCountButton(_ sender: Any) {
         count += 1
         infoCountLabel.text = "Значение счетчика: \(count)"
         updateHistory(message: "значение изменено на +1")
     }
     
-    
-    @IBAction func clearButton(_ sender: Any) {
+    @IBAction private func clearButton(_ sender: Any) {
         clear()
     }
-
-    
-    
     
 }
 
